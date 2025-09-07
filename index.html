@@ -558,14 +558,155 @@
             font-size: 0.9rem;
         }
 
+        /* YouTube Bölümü Stilleri */
+        #youtube-channel {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+        }
+
+        .youtube-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .youtube-info {
+            display: flex;
+            gap: 25px;
+        }
+
+        .youtube-icon {
+            font-size: 60px;
+            color: #FF0000;
+            flex-shrink: 0;
+        }
+
+        .youtube-content h3 {
+            color: #FF0000;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .youtube-content p {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .youtube-btn {
+            background: #FF0000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .youtube-btn:hover {
+            background: #CC0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+        }
+
+        .youtube-videos {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-icon {
+            font-size: 50px;
+            color: #FF0000;
+            margin-bottom: 20px;
+        }
+
+        .video-icon i {
+            filter: drop-shadow(0 4px 8px rgba(255, 0, 0, 0.3));
+        }
+
+        .video-placeholder h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .video-placeholder p {
+            color: #6c757d;
+            margin-bottom: 25px;
+        }
+
+        .video-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .stat i {
+            color: #FF0000;
+        }
+
+        /* WhatsApp Butonu */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
         /* Responsive */
         @media (max-width: 992px) {
-            .about-content, .contact-grid {
+            .about-content, .contact-grid, .youtube-section {
                 grid-template-columns: 1fr;
             }
 
             .hero h1 {
                 font-size: 2.5rem;
+            }
+            
+            .youtube-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .youtube-icon {
+                margin: 0 auto;
             }
         }
 
@@ -602,6 +743,47 @@
             .about-stats {
                 grid-template-columns: 1fr;
                 gap: 15px;
+            }
+            
+            .youtube-section {
+                gap: 25px;
+            }
+            
+            .youtube-videos {
+                padding: 30px 20px;
+            }
+            
+            .video-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .youtube-btn {
+                padding: 12px 25px;
+            }
+            
+            .whatsapp-chat {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-btn {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #youtube-channel {
+                padding: 60px 0;
+            }
+            
+            .youtube-content h3 {
+                font-size: 24px;
+            }
+            
+            .video-icon {
+                font-size: 40px;
             }
         }
     </style>
@@ -692,6 +874,49 @@
         </div>
     </section>
 
+    <!-- YouTube Bölümü - Hizmetler ve Hakkımızda Arasında -->
+    <section id="youtube-channel" class="section">
+        <div class="container">
+            <h2>YouTube Kanalımız</h2>
+            <p class="lead">Kurtarma operasyonlarımızdan canlı videolar</p>
+            
+            <div class="youtube-section">
+                <div class="youtube-info">
+                    <div class="youtube-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="youtube-content">
+                        <h3>Başar Rescue</h3>
+                        <p>Oto kurtarma operasyonlarımızı, yol yardım hizmetlerimizi ve başarılı kurtarma hikayelerimizi YouTube kanalımızdan izleyebilirsiniz. Gerçek kurtarma anlarını bizden takip edin!</p>
+                        <a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank" class="btn youtube-btn">
+                            <i class="fab fa-youtube"></i> Kanalımıza Abone Olun
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="youtube-videos">
+                    <div class="video-placeholder">
+                        <div class="video-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h4>Canlı Kurtarma Videoları</h4>
+                        <p>YouTube kanalımızda gerçek kurtarma operasyonlarımızı izleyin</p>
+                        <div class="video-stats">
+                            <div class="stat">
+                                <i class="fas fa-video"></i>
+                                <span>50+ Video</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span>10K+ Görüntüleme</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
@@ -723,97 +948,6 @@
             </div>
         </div>
     </section>
-    <!-- Youtube Section -->
-<div class="contact-item">
-    <div class="contact-icon">
-        <i class="fab fa-youtube"></i>
-    </div>
-    <div class="contact-details">
-        <h3>YouTube Kanalımız</h3>
-        <p><a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank" class="youtube-link">
-            <i class="fab fa-youtube"></i> Başar Rescue
-        </a></p>
-        <small>Kurtarma operasyonlarımızı izleyin</small>
-        
-        <!-- YouTube'dan son video görüntüsü (isteğe bağlı) -->
-        <div class="youtube-preview">
-            <a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank">
-                <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="Başar Rescue YouTube Kanalı" 
-                     onerror="this.style.display='none'">
-                <div class="play-button">
-                    <i class="fas fa-play"></i>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-
-<style>
-.youtube-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #FF0000;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.youtube-link:hover {
-    color: #CC0000;
-}
-
-.youtube-preview {
-    position: relative;
-    margin-top: 10px;
-    width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.youtube-preview img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.youtube-preview:hover img {
-    transform: scale(1.05);
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 0, 0, 0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .youtube-preview {
-        width: 150px;
-    }
-    
-    .youtube-preview img {
-        height: 90px;
-    }
-    
-    .play-button {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-}
-</style>
 
     <!-- Coverage Area -->
     <section class="coverage" id="coverage">
@@ -899,110 +1033,81 @@
         </div>
     </section>
 
-   <section id="iletisim" class="section">
-    <div class="container">
-        <h2>İletişim</h2>
-        <p class="lead">7/24 hizmetinizdeyiz. Hemen bize ulaşın!</p>
-        
-        <div class="contact-container">
-            <!-- İletişim Bilgileri -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
+    <!-- İletişim Bölümü -->
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2>İletişim</h2>
+            <p class="lead">7/24 hizmetinizdeyiz. Hemen bize ulaşın!</p>
+            
+            <div class="contact-container">
+                <!-- İletişim Bilgileri -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefon</h3>
+                            <p><a href="tel:05418413188">0541 841 3188</a></p>
+                            <small>7/24 aktif</small>
+                        </div>
                     </div>
-                    <div class="contact-details">
-                        <h3>Telefon</h3>
-                        <p><a href="tel:05418413188">0541 841 3188</a></p>
-                        <small>7/24 aktif</small>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adres</h3>
+                            <p>Hatay / Dörtyol</p>
+                            <small>Adana, Hatay, Osmaniye, Maraş, Gaziantep bölgelerine hizmet</small>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/905418413188" target="_blank">0541 841 3188</a></p>
+                            <small>Mesaj atabilirsiniz</small>
+                        </div>
                     </div>
-                    <div class="contact-details">
-                        <h3>Adres</h3>
-                        <p>Hatay / Dörtyol</p>
-                        <small>Adana, Hatay, Osmaniye, Maraş, Gaziantep bölgelerine hizmet</small>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.instagram.com/basarescue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@basarescue</a></p>
+                            <small>Bizi takip edin</small>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>WhatsApp</h3>
-                        <p><a href="https://wa.me/905418413188" target="_blank">0541 841 3188</a></p>
-                        <small>Mesaj atabilirsiniz</small>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Instagram</h3>
-                        <p><a href="https://www.instagram.com/basarescue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@basarescue</a></p>
-                        <small>Bizi takip edin</small>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>YouTube</h3>
+                            <p><a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank">Başar Rescue</a></p>
+                            <small>Videolarımızı izleyin</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            
         </div>
-        
-       
+    </section>
+
+    <!-- WhatsApp Butonu -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/905418413188?text=Merhaba,%20oto%20kurtarma%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+        </a>
     </div>
-       <div class="whatsapp-chat">
-    <a href="https://wa.me/905418413188?text=Merhaba,%20oto%20kurtarma%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn">
-        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
-    </a>
-</div>
 
-<style>
-.whatsapp-chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.whatsapp-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    background: #25D366;
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-    background: #128C7E;
-    transform: translateY(-2px);
-}
-
-/* Mobil görünüm için */
-@media (max-width: 768px) {
-    .whatsapp-chat {
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    .whatsapp-btn {
-        padding: 10px 16px;
-        font-size: 14px;
-    }
-}
-</section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1012,9 +1117,10 @@
                     <p>2024'den beri Hatay ve çevre illerde profesyonel oto kurtarma hizmeti veriyoruz. 7/24 hizmetimizle yanınızdayız.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/basarescue" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/905418413188" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@basarrescue" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -1025,18 +1131,18 @@
                         <li><a href="#about">Hakkımızda</a></li>
                         <li><a href="#coverage">Hizmet Bölgeleri</a></li>
                         <li><a href="#testimonials">Müşteri Yorumları</a></li>
-                        <li><a href="#contact">İletişim</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-services">
                     <h3>Hizmetlerimiz</h3>
                     <ul>
-                        <li><a href="#">Oto Kurtarma</a></li>
-                        <li><a href="#">Yol Yardım</a></li>
-                        <li><a href="#">Vinç Hizmeti</a></li>
-                        <li><a href="#">Lastik Değişimi</a></li>
-                        <li><a href="#">Akü Takviyesi</a></li>
+                        <li><a href="#services">Oto Kurtarma</a></li>
+                        <li><a href="#services">Yol Yardım</a></li>
+                        <li><a href="#services">Vinç Hizmeti</a></li>
+                        <li><a href="#services">Lastik Değişimi</a></li>
+                        <li><a href="#services">Akü Takviyesi</a></li>
                     </ul>
                 </div>
 
@@ -1051,7 +1157,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2023 Başar Oto Kurtarma. Tüm hakları saklıdır.</p>
+                <p>&copy; 2024 Başar Oto Kurtarma. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
@@ -1073,16 +1179,6 @@
             });
         });
 
-        // Simple form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Mesajınız için teşekkürler! En kısa sürede sizi arayacağız.');
-                contactForm.reset();
-            });
-        }
-
         // Current year for copyright
         document.addEventListener('DOMContentLoaded', function() {
             const yearElement = document.querySelector('.footer-bottom p');
@@ -1093,7 +1189,3 @@
     </script>
 </body>
 </html>
-
-
-
-
