@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta name="google-site-verification" content="1iNrSg90Rnjb7bfgm87nmNKowfmcbKQW1hDbPk9PrRY" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Başar Oto Kurtarma - 7/24 Yol Yardım Hizmeti</title>
-    <meta name="description" content="Hatay Dörtyol merkezli, Adana, Hatay, Osmaniye, Maraş ve Gaziantep illerinde 7/24 oto kurtarma ve yol yardım hizmeti.">
-    <meta name="keywords" content="oto kurtarma, yol yardım, Hatay oto kurtarma, Adana çekici, Osmaniye oto kurtarma, acil yol yardım, 7/24 oto kurtarma, Maraş oto kurtarma, Gaziantep oto kurtarma, Dörtyol oto kurtarma">
+    <meta name="description"
+        content="Hatay Dörtyol merkezli, Adana, Hatay, Osmaniye, Maraş ve Gaziantep illerinde 7/24 oto kurtarma ve yol yardım hizmeti.">
+    <meta name="keywords"
+        content="oto kurtarma, yol yardım, Hatay oto kurtarma, Adana çekici, Osmaniye oto kurtarma, acil yol yardım, 7/24 oto kurtarma, Maraş oto kurtarma, Gaziantep oto kurtarma, Dörtyol oto kurtarma">
     <meta name="author" content="Başar Oto Kurtarma">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <style>
         :root {
             --primary: #e30613;
@@ -104,17 +107,16 @@
             gap: 10px;
         }
 
-        .logo-img {
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
+        .logo-image {
+            height: 60px;
+            /* Logonuzun yüksekliğine göre ayarlayın */
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            .logo-image {
+                height: 50px;
+            }
         }
 
         .logo-text {
@@ -126,6 +128,11 @@
         .logo-text span {
             color: var(--primary);
         }
+
+
+
+
+
 
         .nav-menu {
             display: flex;
@@ -431,7 +438,8 @@
             margin-bottom: 5px;
         }
 
-        .contact-text p, .contact-text a {
+        .contact-text p,
+        .contact-text a {
             color: var(--gray);
         }
 
@@ -484,14 +492,18 @@
             margin-bottom: 20px;
         }
 
-        .footer-links h3, .footer-services h3, .footer-subscribe h3 {
+        .footer-links h3,
+        .footer-services h3,
+        .footer-subscribe h3 {
             font-size: 1.2rem;
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
         }
 
-        .footer-links h3:after, .footer-services h3:after, .footer-subscribe h3:after {
+        .footer-links h3:after,
+        .footer-services h3:after,
+        .footer-subscribe h3:after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -501,18 +513,21 @@
             background: var(--primary);
         }
 
-        .footer-links ul, .footer-services ul {
+        .footer-links ul,
+        .footer-services ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
-        .footer-links a, .footer-services a {
+        .footer-links a,
+        .footer-services a {
             opacity: 0.8;
             transition: var(--transition);
         }
 
-        .footer-links a:hover, .footer-services a:hover {
+        .footer-links a:hover,
+        .footer-services a:hover {
             opacity: 1;
             color: var(--primary);
         }
@@ -621,7 +636,7 @@
             border-radius: 15px;
             padding: 40px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .video-icon {
@@ -693,19 +708,22 @@
 
         /* Responsive */
         @media (max-width: 992px) {
-            .about-content, .contact-grid, .youtube-section {
+
+            .about-content,
+            .contact-grid,
+            .youtube-section {
                 grid-template-columns: 1fr;
             }
 
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .youtube-info {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .youtube-icon {
                 margin: 0 auto;
             }
@@ -745,29 +763,29 @@
                 grid-template-columns: 1fr;
                 gap: 15px;
             }
-            
+
             .youtube-section {
                 gap: 25px;
             }
-            
+
             .youtube-videos {
                 padding: 30px 20px;
             }
-            
+
             .video-stats {
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             .youtube-btn {
                 padding: 12px 25px;
             }
-            
+
             .whatsapp-chat {
                 bottom: 15px;
                 right: 15px;
             }
-            
+
             .whatsapp-btn {
                 padding: 10px 16px;
                 font-size: 14px;
@@ -778,24 +796,27 @@
             #youtube-channel {
                 padding: 60px 0;
             }
-            
+
             .youtube-content h3 {
                 font-size: 24px;
             }
-            
+
             .video-icon {
                 font-size: 40px;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
-                <div class="logo-img">B</div>
-                <div class="logo-text">Başar <span>Oto Kurtarma</span></div>
+                <div class="logo">
+                    <img src="favicon.ico.png" alt="Başar Oto Kurtarma" class="logo-image">
+                    <div class="logo-text">Başar <span>Oto Kurtarma</span></div>
+                </div>
             </div>
 
             <nav class="nav-menu" id="navMenu">
@@ -822,7 +843,8 @@
     <section class="hero">
         <div class="container hero-content">
             <h1>7/24 Yol Yardım ve Oto Kurtarma Hizmeti</h1>
-            <p>Hatay Dörtyol merkezli, Adana, Hatay, Osmaniye, Maraş ve Gaziantep'te hızlı ve güvenilir çözümler sunuyoruz.</p>
+            <p>Hatay Dörtyol merkezli, Adana, Hatay, Osmaniye, Maraş ve Gaziantep'te hızlı ve güvenilir çözümler
+                sunuyoruz.</p>
             <div class="hero-buttons">
                 <a href="tel:05418413188" class="btn">Hemen Ara</a>
                 <a href="#contact" class="btn btn-outline">İletişim</a>
@@ -835,7 +857,8 @@
         <div class="container">
             <div class="section-title">
                 <h2>Hizmetlerimiz</h2>
-                <p>Profesyonel ekibimiz ve donanımlı araçlarımızla her türlü yol yardım ihtiyacınız için yanınızdayız.</p>
+                <p>Profesyonel ekibimiz ve donanımlı araçlarımızla her türlü yol yardım ihtiyacınız için yanınızdayız.
+                </p>
             </div>
 
             <div class="services-grid">
@@ -845,7 +868,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Oto Kurtarma</h3>
-                        <p>Kaza, arıza veya herhangi bir nedenle yolda kalan araçlarınız için profesyonel kurtarma hizmeti.</p>
+                        <p>Kaza, arıza veya herhangi bir nedenle yolda kalan araçlarınız için profesyonel kurtarma
+                            hizmeti.</p>
                         <a href="tel:05418413188" class="btn">Hemen Ara</a>
                     </div>
                 </div>
@@ -880,7 +904,7 @@
         <div class="container">
             <h2>YouTube Kanalımız</h2>
             <p class="lead">Kurtarma operasyonlarımızdan canlı videolar</p>
-            
+
             <div class="youtube-section">
                 <div class="youtube-info">
                     <div class="youtube-icon">
@@ -888,13 +912,15 @@
                     </div>
                     <div class="youtube-content">
                         <h3>Başar Rescue</h3>
-                        <p>Oto kurtarma operasyonlarımızı, yol yardım hizmetlerimizi ve başarılı kurtarma hikayelerimizi YouTube kanalımızdan izleyebilirsiniz. Gerçek kurtarma anlarını bizden takip edin!</p>
-                        <a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank" class="btn youtube-btn">
+                        <p>Oto kurtarma operasyonlarımızı, yol yardım hizmetlerimizi ve başarılı kurtarma hikayelerimizi
+                            YouTube kanalımızdan izleyebilirsiniz. Gerçek kurtarma anlarını bizden takip edin!</p>
+                        <a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank"
+                            class="btn youtube-btn">
                             <i class="fab fa-youtube"></i> Kanalımıza Abone Olun
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="youtube-videos">
                     <div class="video-placeholder">
                         <div class="video-icon">
@@ -924,9 +950,11 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>Başar Oto Kurtarma Hakkında</h2>
-                    <p>2024 yılından bu yana Hatay ve çevre illerde profesyonel oto kurtarma hizmeti veren firmamız, deneyimli personeli ve son teknoloji ekipmanları ile 7/24 hizmetinizdedir.</p>
-                    <p>Müşteri memnuniyetini ön planda tutan anlayışımız ve hızlı müdahale süreçlerimiz ile sektördeki lider firmalardan biriyiz.</p>
-                    
+                    <p>2024 yılından bu yana Hatay ve çevre illerde profesyonel oto kurtarma hizmeti veren firmamız,
+                        deneyimli personeli ve son teknoloji ekipmanları ile 7/24 hizmetinizdedir.</p>
+                    <p>Müşteri memnuniyetini ön planda tutan anlayışımız ve hızlı müdahale süreçlerimiz ile sektördeki
+                        lider firmalardan biriyiz.</p>
+
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-number">5+</div>
@@ -994,7 +1022,8 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Gece yarısı Adana'da arızalanan aracımı çok kısa sürede kurtardılar. Profesyonel ve hızlı hizmetleri için teşekkürler."
+                        "Gece yarısı Adana'da arızalanan aracımı çok kısa sürede kurtardılar. Profesyonel ve hızlı
+                        hizmetleri için teşekkürler."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">MÇ</div>
@@ -1007,7 +1036,8 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "İskenderun'da geçirdiğim kaza sonrası 15 dakika gibi kısa bir sürede yanımdaydılar. Çok ilgili ve deneyimli bir ekip."
+                        "İskenderun'da geçirdiğim kaza sonrası 15 dakika gibi kısa bir sürede yanımdaydılar. Çok ilgili
+                        ve deneyimli bir ekip."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">AY</div>
@@ -1020,7 +1050,8 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Yol kenarında kalmıştım, akü bitmişti. Çabucak geldiler ve problemi hızlıca çözdüler. Uygun fiyat ve kaliteli hizmet."
+                        "Yol kenarında kalmıştım, akü bitmişti. Çabucak geldiler ve problemi hızlıca çözdüler. Uygun
+                        fiyat ve kaliteli hizmet."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">HK</div>
@@ -1039,7 +1070,7 @@
         <div class="container">
             <h2>İletişim</h2>
             <p class="lead">7/24 hizmetinizdeyiz. Hemen bize ulaşın!</p>
-            
+
             <div class="contact-container">
                 <!-- İletişim Bilgileri -->
                 <div class="contact-info">
@@ -1053,7 +1084,7 @@
                             <small>7/24 aktif</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -1064,7 +1095,7 @@
                             <small>Adana, Hatay, Osmaniye, Maraş, Gaziantep bölgelerine hizmet</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
@@ -1075,14 +1106,15 @@
                             <small>Mesaj atabilirsiniz</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="contact-details">
                             <h3>Instagram</h3>
-                            <p><a href="https://www.instagram.com/basarescue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@basarescue</a></p>
+                            <p><a href="https://www.instagram.com/basarescue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    target="_blank">@basarescue</a></p>
                             <small>Bizi takip edin</small>
                         </div>
                     </div>
@@ -1093,7 +1125,8 @@
                         </div>
                         <div class="contact-details">
                             <h3>YouTube</h3>
-                            <p><a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank">Başar Rescue</a></p>
+                            <p><a href="https://youtube.com/@basarrescue?si=0Hk-LuKsDbEqvlob" target="_blank">Başar
+                                    Rescue</a></p>
                             <small>Videolarımızı izleyin</small>
                         </div>
                     </div>
@@ -1104,7 +1137,8 @@
 
     <!-- WhatsApp Butonu -->
     <div class="whatsapp-chat">
-        <a href="https://wa.me/905418413188?text=Merhaba,%20oto%20kurtarma%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn">
+        <a href="https://wa.me/905418413188?text=Merhaba,%20oto%20kurtarma%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum."
+            target="_blank" class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
         </a>
     </div>
@@ -1115,10 +1149,12 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">Başar Oto Kurtarma</div>
-                    <p>2024'den beri Hatay ve çevre illerde profesyonel oto kurtarma hizmeti veriyoruz. 7/24 hizmetimizle yanınızdayız.</p>
+                    <p>2024'den beri Hatay ve çevre illerde profesyonel oto kurtarma hizmeti veriyoruz. 7/24
+                        hizmetimizle yanınızdayız.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/basarescue" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/basarescue" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="https://wa.me/905418413188" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://youtube.com/@basarrescue" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -1181,7 +1217,7 @@
         });
 
         // Current year for copyright
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const yearElement = document.querySelector('.footer-bottom p');
             if (yearElement) {
                 yearElement.innerHTML = `&copy; ${new Date().getFullYear()} Başar Oto Kurtarma. Tüm hakları saklıdır.`;
@@ -1189,7 +1225,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
-
